@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mypage"
+            android:title="마이 페이지"
+            android:background="#8095939A"/>`
+        <item
+            android:id="@+id/nav_favorite"
+            android:title="내가찜한장소"
+            android:background="#8095939A"/>
+        <!--<item-->
+        <!--android:id="@+id/nav_slideshow"-->
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+        <!--android:title="즐겨가는 장소" />-->
+        <item
+            android:id="@+id/nav_board"
+            android:title="몬커뮤니티"
+            android:background="#8095939A"/>
+    </group>
+</menu>

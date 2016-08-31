@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:id="@+id/cardLinear">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80000000">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/RoomLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="#ffffff"
+                        android:text="강남"/>
+
+                    <TextView
+                        android:id="@+id/RoomName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:textSize="25sp"
+                        android:textColor="#ffffff"
+                        android:text="힐스터디"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/priceArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/RoomPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tempcircle"
+                        android:padding="5dp"
+                        android:paddingRight="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="left"
+                        android:textSize="8sp"
+                        android:textColor="#ffffff"
+                        android:text="1300 ~ "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/AddressArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/priceArea"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical">
+
+                    <!---->
+                    <TextView
+                        android:id="@+id/RoomAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:background="@drawable/tempcircle"
+                        android:gravity="left"
+                        android:textSize="8sp"
+                        android:textColor="#ffffff"
+                        android:text="서울시 서초구"/>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <!---->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textColor="#ffffff"
+                        android:text="평점"/>
+
+                    <TextView
+                        android:id="@+id/RoomRating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textSize="28sp"
+                        android:textColor="#ffffff"
+                        android:text="4.6"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

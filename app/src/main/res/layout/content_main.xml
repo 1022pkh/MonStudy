@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="steam.appjam.sopt.com.myapplication.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="9"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/LocationArea"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:background="#E23E1E">
+
+                <ImageView
+                    android:id="@+id/findLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_location_word"
+                    android:text="지역"
+                    android:textSize="21dp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/KindArea"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:background="#F6D03F">
+
+
+                <ImageView
+                    android:id="@+id/findKind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_room_word"
+                    android:text="업종"
+                    android:textSize="21dp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/PeopleArea"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:background="#60B0CC">
+
+                <ImageView
+                    android:id="@+id/findPeople"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="인원수"
+                    android:textSize="21dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_people_word"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainArea"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <include layout="@layout/activity_main_basic" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

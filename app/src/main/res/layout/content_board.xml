@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".board.BoardView"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#ffffff">
+    <LinearLayout
+        android:id="@+id/layout_monstudy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/tv_montitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="몬커뮤니티"
+            android:textSize="15sp"
+            android:textColor="#696969"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#9081FF"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="16dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_Search"
+            android:layout_weight="1"
+            android:hint="지역명/스터디명을 입력해주세요"
+            android:textSize="12sp"
+            android:textColorHint="#bbbbbb"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Search"
+            android:background="@drawable/ic_search_white_24dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/board_background"
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="30dp">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ListView1"></ListView>
+    </LinearLayout>
+</LinearLayout>

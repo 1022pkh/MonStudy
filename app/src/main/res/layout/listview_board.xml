@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".board.BoardRow"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지역"
+                android:textSize="12sp"
+                android:textColor="#E23E1E"
+                android:background="@drawable/board_detail_background"
+                android:padding="5dp"
+                android:layout_marginRight="16dp"/>
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="스터디 유형"
+                android:textSize="10sp"
+                android:textColor="#9081FF"
+                android:layout_marginRight="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제목 : 자바 스터디 멤버 구합니다~"
+                android:textSize="12sp"
+                android:textColor="#696969"
+                android:id="@+id/tv_title"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닉네임"
+                android:textColor="#818181"
+                android:textSize="9sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:textColor="#696969"
+                android:text=" / "/>
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000.0.0 00:00"
+                android:textSize="9sp"
+                android:textColor="#818181"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

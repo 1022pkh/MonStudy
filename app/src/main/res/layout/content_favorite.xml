@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".favorite.FavoriteSpace"
+    tools:showIn="@layout/app_bar_favorite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/layout_monstudy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/tv_montitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="내가찜한장소"
+                android:textSize="15sp"
+                android:textColor="#696969"
+                android:padding="10dp"
+                android:background="#ffffff"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listView"
+            android:layout_marginTop="1dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</FrameLayout>

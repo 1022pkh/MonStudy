@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="steam.appjam.sopt.com.myapplication.join.view.JoinActivity"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:id="@+id/TopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/main_toolbar_title"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="d"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/ic_sign_in"
+        android:weightSum="1"
+        android:layout_below="@id/TopTitle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#60B0CC"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                >
+                <EditText
+                    android:background="@drawable/edittext_join"
+                    android:id="@+id/join_edit_id"
+                    android:layout_width="156dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14sp"
+                    android:hint="아이디를 입력하세요"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:textAlignment="center" />
+                <Button
+                    android:background="@drawable/button_join"
+                    android:id="@+id/join_btn_idDupl"
+                    android:layout_width="70dp"
+                    android:layout_height="38dp"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    android:text="중복확인"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center">
+
+                <EditText
+                    android:background="@drawable/edittext_join"
+                    android:layout_width="156dp"
+                    android:layout_height="38dp"
+
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/join_edit_name"
+                    android:hint="닉네임을 입력하세요"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:textSize="12sp"
+                    android:textAlignment="center"/>
+                <Button
+                    android:background="@drawable/button_join"
+                    android:id="@+id/join_btn_nameDupl"
+                    android:layout_width="70dp"
+                    android:layout_height="38dp"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    android:text="중복확인"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <EditText
+                android:background="@drawable/edittext_join"
+                android:id="@+id/join_edit_email"
+                android:layout_width="236dp"
+                android:layout_height="38dp"
+                android:hint="이메일을 입력하세요"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+            <EditText
+                android:background="@drawable/edittext_join"
+                android:id="@+id/join_edit_passwd"
+                android:layout_width="236dp"
+                android:layout_height="38dp"
+                android:hint="비밀번호를 입력하세요"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:maxLength="15"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+            <EditText
+                android:background="@drawable/edittext_join"
+                android:id="@+id/join_edit_passwd_conf"
+                android:layout_width="236dp"
+                android:layout_height="38dp"
+                android:hint="비밀번호를 한번 더 입력하세요"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:maxLength="15"
+                android:layout_marginBottom="6dp"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
+
+            <Button
+                android:background="@drawable/button_join"
+                android:id="@+id/join_btn_next"
+                android:layout_width="94dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="다음"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
